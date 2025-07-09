@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VS Code and PyCharm settings
+.vscode/
+.idea/
+
+# Environment variable files
+.env
+*.env
+
+# SQLite database (if used)
+*.sqlite3
+*.db
+
+# Alembic migration artifacts (if you don't want to version generated scripts)
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# Log and coverage files
+*.log
+*.out
+*.pid
+*.gz
+*.coverage
+coverage.xml
+htmlcov/
+
+# Test cache
+.pytest_cache/
+.cache/
+
+# Compiled static assets (e.g., Vite/React build)
+static/dist/
+static/build/
+node_modules/
+
+# Docker related
+*.pid
+*.bak
+*.tar
+Dockerfile.*
+docker-compose.*
+**/docker-compose.override.yml
+**/.docker
+
+# MacOS and system junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# Ignore all secrets in this folder structure
+**/secrets.*

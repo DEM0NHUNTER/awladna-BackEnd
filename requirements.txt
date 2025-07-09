@@ -1,0 +1,66 @@
+# ======================= Core Framework ======================= #
+fastapi==0.115.2
+uvicorn[standard]>=0.27.0
+python-multipart==0.0.9
+
+# ======================= Database & ORM ======================= #
+SQLAlchemy==2.0.40
+alembic==1.11.1
+asyncpg==0.29.0
+aiosqlite==0.20.0
+pymysql==1.1.0
+psycopg2-binary==2.9.6
+
+# ======================= MongoDB ======================= #
+pymongo==4.5.0                 # Core MongoDB driver
+motor==3.3.2                   # Async driver for MongoDB
+
+# ======================= Redis ======================= #
+redis==5.0.1                   # Sync Redis (used by rate limiter)
+aioredis<2.0,>=1.3.1           # Async Redis (legacy support)
+
+# ======================= Security & Auth ======================= #
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+itsdangerous>=2.1.2
+python-decouple==3.8
+
+# ======================= Settings & Validation ======================= #
+pydantic>=2.0,<3.0
+pydantic-settings>=2.6.0
+email-validator>=2.2.0,<3.0.0
+typing-extensions>=4.5.0
+
+# ======================= Middleware & Rate Limiting ======================= #
+fastapi-middleware==0.2.1
+slowapi==0.1.8
+fastapi-limiter[redis]==0.1.0
+httpx==0.27.0
+
+# ======================= Task Queue ======================= #
+celery==5.3.6
+
+# ======================= Email ======================= #
+fastapi-mail>=1.5.0
+
+# ======================= Testing ======================= #
+pytest==8.0.2
+pytest-asyncio==0.23.5
+requests==2.31.0
+
+# ======================= Development & Debugging ======================= #
+watchfiles==0.21.0
+python-dotenv==1.1.0
+loguru==0.7.2
+
+# ======================= Text Processing ======================= #
+textblob==0.17.1
+
+# ======================= SSL & Retry ======================= #
+certifi>=2024.0.0
+tenacity>=8.0.0
+
+# ======================= AI / NLP ======================= #
+huggingface_hub>=0.23.0
+openai
